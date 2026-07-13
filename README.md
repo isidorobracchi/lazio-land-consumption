@@ -2,11 +2,11 @@
 
 
 
-Reproducible geospatial analysis of land consumption in Lazio (Italy).
+A reproducible geospatial analysis of land consumption in Lazio (Italy) using official ISTAT and ISPRA datasets.
 
 
 
-\## Technologies
+\## Tech stack
 
 
 
@@ -20,25 +20,33 @@ Reproducible geospatial analysis of land consumption in Lazio (Italy).
 
 \- Pandas
 
+\- GeoPandas
+
 \- SQL
 
 \- QGIS
 
 
 
-\## Project structure
+\## Workflow
 
 
 
-\- data/
+ISTAT boundaries
 
-\- sql/
+&#x20;       ↓
 
-\- python/
+Python ETL
 
-\- qgis/
+&#x20;       ↓
 
-\- outputs/
+PostGIS
 
+&#x20;       ↓
 
+SQL analysis
+
+&#x20;       ↓
+
+QGIS maps
 
