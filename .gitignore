@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# QGIS
+*.qgs~
+*.qgz~
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# dati temporanei
+data/processed/
+
+# cache
+.cache/

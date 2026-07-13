@@ -1,0 +1,19 @@
+services:
+  postgis:
+    image: postgis/postgis:17-3.5
+    container_name: lazio_postgis
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: lazio_gis
+      POSTGRES_USER: gis_user
+      POSTGRES_PASSWORD: gis_password
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+
+volumes:
+  postgis_data:
